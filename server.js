@@ -1,6 +1,6 @@
 const grpc = require('@grpc/grpc-js');
 const protoLoader = require('@grpc/proto-loader');
-const pool = require('./db');
+const pool = require('./db/db');
 
 const PROTO_PATH = './service.proto';
 const packageDefinition = protoLoader.loadSync(PROTO_PATH, {});
